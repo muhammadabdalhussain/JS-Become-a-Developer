@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event & Event Listener</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html,
+        body {
+            padding: 30px;
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        /* h1{
+            color: #444;
+            font-size: 10rem;
+            font-weight: 600;
+            letter-spacing: 2-rem;
+            user-select: none;
+        } */
+
+
+
+        /* #btn {
+            padding: 12px 22px;
+            color: white;
+            background-color: rgb(78, 124, 109);
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        #btn:hover {
+            background-color: aquamarine;
+        }
+ */
+
+        /* submit  */
+        
+        #main {
+            width: 100%;
+            height: 100%;
+        }
+       input {
+            display: block;
+        }
+
+        #main input {
+            padding: 12px;
+            margin: 4px;
+            border-radius: 4px;
+        }
+
+      
+       .card {
+            display: inline-block;
+            padding: 23px;
+            border: 2px solid #756e6e;
+            border-radius: 4px;
+            margin-left: 6px;
+        } 
+
+        .profile {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .card {
+            max-width: 350px;
+            padding: 20px;
+            border: 2px solid gray; 
+            border-radius: 10px;
+            margin-top: 40px;
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        .card h3{
+            margin-top: 5px;
+        }
+
+        .card h5{
+            margin-top: 5px;
+        }
+        .card p{
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .profile img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+
+        /* Mouseover and mousemove  */
+
+        /* #genius{
+            position: absolute;
+            transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        body{
+            overflow: hidden;
+            position: relative;
+        } */
+
+        /* Event Bubble */
+
+        /*      #main{
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+        }
+
+        #nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 100px;
+            background-color: #444;
+        }
+
+        a{
+            color: white;
+        }
+
+        button{
+            color: white;       
+            padding: 12px 22px;
+            background-color: red;
+            border-radius: 5px;
+            border: none;
+        } */
+
+        /* .lt{
+            text-decoration: line-through;
+        }*/
+
+        /* Event Capturing */
+
+   /* .a {
+            height: 30%;
+            width: 40%;
+            background-color: aqua;
+        }
+
+        .b {
+            height: 40%;
+            width: 50%;
+            background-color: rgb(150, 63, 171);
+        }
+
+        .c {
+            height: 50%;
+            width: 60%;
+            background-color: rgb(81, 223, 97);
+        }  */
+ 
+    </style>
+
+</head>
+
+<body>
+    <h1 class="fruit">apple</h1>
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias placeat explicabo architecto qui dolore magni aperiam. Cupiditate voluptas, iste, natus at id quae aliquam sed facilis sunt quidem illo numquam recusandae consequatur.</p> -->
+
+    <!-- <input type="text" placeholder="name"> -->
+
+
+    <!-- <h3 id="device">Select your device</h3>
+        <select>
+            <option selected disabled>Choose Your Device</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Mi">Xiomi</option>
+            <option value="apple">apple iphone</option>
+            <option value="Pixel">Pixel</option>
+        </select> -->
+
+
+    <!-- task 1 and task 2 without h1-->
+    <!-- <div id="main"> -->
+    <!-- <h1>a</h1> -->
+    <!-- <input id="fileinp" type="file">
+             <div id="btn">Upload File</div>
+        </div> -->
+
+    <!-- submit -->
+    <div id="main">
+        <form action="">
+            <input type="text" placeholder="profile pic">
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="occupation">
+            <input type="text" placeholder="info">
+            <input type="submit">
+        </form>
+        <!-- <div class="card">
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1635249472925-af7c0b8f3c5e?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+                <h3>Muhammad Abdal Hussain</h3>
+                <h5>Creative Coder</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sed, at explicabo est asperiores modi.
+                    Illo voluptates hic architecto, doloribus totam inventore fugiat minus delectus, culpa, vitae
+                    excepturi exercitationem alias Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iste cum
+                    temporibus. Quod tempora in possimus consequatur ipsam suscipit sint recusandae, quisquam provident
+                    esse nesciunt reiciendis cumque nihil. Quasi, nulla..</p>      
+        </div> -->
+    </div>
+
+
+    <!-- Mouseover and mousemove -->
+    <!-- 
+     <div id="genius">
+
+     </div> -->
+
+    <!-- Event Object -->
+
+    <!-- Event Bubbling -->
+    <!-- <div id="main">
+        <div id="nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <button>Click and follow</button>
+        </div>
+       </div> -->
+
+    <!-- <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Peach</li>
+        <li>Graphs</li>
+    </ul> -->
+
+
+<!-- Event Capturing -->
+
+    <!-- <div class="a">
+        <div class="b">
+            <div class="c">
+                <button>click me</button>
+            </div>
+        </div>
+    </div> -->
+
+     
+
+    <script src="../Events&EventListener/Event.js"></script>
+</body>
+
+</html>
