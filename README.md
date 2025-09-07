@@ -5,6 +5,7 @@ I'm a frontend developer who loves turning design concepts into interactive digi
 ---
 
 **What I'm currently working with:**
+- **Languages:** HTML, CSS, JavaScript 
 - ⚛️ **React:** Building dynamic user interfaces.
 - 🎨 **Tailwind CSS:** For fast, utility-first styling.
 - 🚀 **Vite:** My go-to for a lightning-fast development experience.
